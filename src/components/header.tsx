@@ -2,6 +2,10 @@ import { Box } from "@mui/material";
 import Medium_Button from "./button";
 import F from "./font";
 const Header = () => {
+  const ButtonDownloadStyle = {
+    width: "150px",
+  };
+
   return (
     <>
       <Box
@@ -28,7 +32,7 @@ const Header = () => {
           <F.P2>Project</F.P2>
           <F.P2>Contact me</F.P2>
         </Box>
-        <Medium_Button style={{ width: "150px" }}>Resume</Medium_Button>
+        <Medium_Button style={ButtonDownloadStyle}>Resume</Medium_Button>
       </Box>
     </>
   );

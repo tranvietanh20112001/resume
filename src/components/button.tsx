@@ -17,10 +17,6 @@ const Medium_Button = styled.button`
     color: ${color.Black};
     border: 1px solid ${color.Black};
   }
-
-  @media (max-width: 768px) {
-    display: none;
-  }
 `;
 
 export default Medium_Button;
