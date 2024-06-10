@@ -134,12 +134,14 @@ const ContactMe = () => {
             <TextField
               id="name"
               label="Your name"
+              name="user_name"
               variant="outlined"
               required
               fullWidth
             />
             <TextField
               id="email"
+              name="user_email"
               label="Your email"
               variant="outlined"
               required
@@ -152,6 +154,7 @@ const ContactMe = () => {
               maxRows={4}
               required
               fullWidth
+              name="message"
             />
 
             <Medium_Button style={{ width: "100%" }} type="submit">
