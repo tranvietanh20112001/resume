@@ -10,6 +10,7 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import ContactIcon from "@mui/icons-material/ConnectWithoutContact";
 import ChecklistIcon from "@mui/icons-material/Checklist";
+import DownloadIcon from "@mui/icons-material/Download";
 const ReactIcon = () => {
   return (
     <>
@@ -77,4 +78,5 @@ export default {
   WordIcon,
   ContactIcon,
   ChecklistIcon,
+  DownloadIcon,
 };

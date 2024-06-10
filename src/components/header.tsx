@@ -1,9 +1,20 @@
 import { Box } from "@mui/material";
 import Medium_Button from "./button";
 import F from "./font";
+import I from "./icon";
 const Header = () => {
   const ButtonDownloadStyle = {
     width: "150px",
+    "@media (max-width: 768px)": {
+      display: "none",
+    },
+  };
+
+  const ButtonDownloadMobileStyle = {
+    display: "none",
+    "@media (max-width: 768px)": {
+      display: "block",
+    },
   };
 
   return (
@@ -22,7 +33,7 @@ const Header = () => {
           justifyContent={"space-between"}
           alignItems={"center"}
           sx={{
-            "@media (max-width: 768px)": {
+            "@media (max-width: 1080px)": {
               display: "none",
             },
           }}
@@ -32,7 +43,10 @@ const Header = () => {
           <F.P2>Project</F.P2>
           <F.P2>Contact me</F.P2>
         </Box>
-        <Medium_Button style={ButtonDownloadStyle}>Resume</Medium_Button>
+        <Medium_Button sx={ButtonDownloadStyle}>Resume</Medium_Button>
+        <Medium_Button sx={ButtonDownloadMobileStyle}>
+          <I.DownloadIcon />
+        </Medium_Button>
       </Box>
     </>
   );
