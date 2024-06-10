@@ -11,6 +11,31 @@ const displaytext = styled("h1")({
     lineHeight: "32px",
   },
 });
+
+const H3 = styled("h3")({
+  fontSize: "24px",
+  lineHeight: "28px",
+  tracking: "-2%",
+  margin: 0,
+  fontWeight: "400px",
+  "@media (max-width: 768px)": {
+    fontSize: "20px",
+    lineHeight: "24px",
+  },
+});
+
+const H4 = styled("h4")({
+  fontSize: "20px",
+  lineHeight: "24px",
+  tracking: "-2%",
+  margin: 0,
+  fontWeight: "400px",
+  "@media (max-width: 768px)": {
+    fontSize: "16px",
+    lineHeight: "20px",
+  },
+});
+
 // const displaytext_medium = styled.p`
 //   font-size: 24px;
 //   line-height: 28px;
@@ -48,18 +73,6 @@ const P2 = styled("p")({
 //   tracking: -2%;
 // `;
 
-// const H3 = styled.h3`
-//   font-size: 28px;
-//   line-height: 32px;
-//   tracking: -2%;
-// `;
-
-// const H4 = styled.h4`
-//   font-size: 24px;
-//   line-height: 28px;
-//   tracking: -2%;
-// `;
-
 // const H5 = styled.h5`
 //   font-size: 20px;
 //   line-height: 24px;
@@ -80,8 +93,8 @@ export default {
   //   P3,
   //   H1,
   //   H2,
-  //   H3,
-  //   H4,
+  H3,
+  H4,
   //   H5,
   //   H6,
 };

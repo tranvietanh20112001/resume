@@ -3,9 +3,7 @@ import F from "../../components/font";
 import Avatar from "../../assets/logo4.gif";
 const AboutMe = () => {
   const Image = styled("img")({
-    width: "100%",
     height: "90%",
-    objectFit: "cover",
 
     "@media (max-width: 768px)": {
       width: "30%",
@@ -47,6 +45,7 @@ const AboutMe = () => {
           flexDirection={"column"}
           gap={"24px"}
           justifyContent={"center"}
+          alignItems={"center"}
           sx={{
             "@media (max-width: 768px)": {
               width: "100%",
